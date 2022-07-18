@@ -419,6 +419,7 @@ a {
 }
 
 .main-footer__form-input {
+  min-width: 269px;
   padding: 13px 20px;
   padding-right: 60px;
   font-family: "Inter", system-ui, sans-serif;
