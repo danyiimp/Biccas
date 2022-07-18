@@ -223,7 +223,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #a6a6a6;
+  color: #191a15;
   border: none;
   border-radius: 10px;
 }
@@ -233,7 +233,7 @@ a {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  color: #a6a6a6;
 }
 
 .form-get-started__message {
@@ -245,7 +245,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #a6a6a6;
+  color: #191a15;
   border-radius: 10px;
 }
 
@@ -254,7 +254,7 @@ a {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  color: #a6a6a6;
 }
 
 .form-get-started__submit {
@@ -392,6 +392,7 @@ a {
 }
 
 .main-footer {
+  margin-top: -1px;
   padding: 40px 130px;
   background-color: #161c28;
 }
@@ -443,7 +444,7 @@ a {
 
 .main-footer__form-submit {
   position: absolute;
-  right: 13px;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
   width: 46px;
