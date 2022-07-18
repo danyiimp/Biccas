@@ -91,6 +91,8 @@ a {
   width: 32px;
   height: 32px;
   background-color: #54bd95;
+  background-image: url("./../img/icons/tick.svg");
+  background-repeat: no-repeat;
   border-radius: 50%;
 }
 
@@ -168,6 +170,7 @@ a {
 .form-get-started {
   padding: 40px 86px 66px;
   min-width: 612px;
+  height: min-content;
   background-color: #222938;
   border-radius: 20px;
 }
@@ -184,6 +187,7 @@ a {
 }
 
 .form-get-started__title {
+  position: relative;
   margin: 0;
   margin-bottom: 10px;
   padding-top: 96px;
@@ -192,6 +196,19 @@ a {
   font-weight: 500;
   color: #ffffff;
   text-align: center;
+}
+
+.form-get-started__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 72px;
+  height: 86px;
+  background-image: url("./../img/icons/coins.svg");
+  background-repeat: no-repeat;
 }
 
 .form-get-started__label-title {
@@ -305,11 +322,25 @@ a {
 }
 
 .introduction__demo {
+  position: relative;
   display: inline-block;
   padding: 9px 0;
   padding-left: 54px;
   line-height: 22px;
   color: #191a15;
+}
+
+.introduction__demo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("./../img/icons/view.svg");
+  background-repeat: no-repeat;
 }
 
 .introduction__picture {
@@ -419,6 +450,9 @@ a {
   height: 46px;
   padding: 0;
   background-color: #54bd95;
+  background-image: url("./../img/icons/arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 50%;
   border: none;
 }
@@ -495,7 +529,6 @@ a {
 
 .navigation {
   display: flex;
-  align-items: center;
 }
 
 .navigation__list {
@@ -636,7 +669,23 @@ a {
 }
 
 .rating__stars {
+  display: flex;
   margin-bottom: 18px;
+}
+
+.rating__star {
+  display: block;
+  height: 26px;
+  margin-right: 3px;
+  color: #bbbbbb;
+}
+
+.rating__star:last-child {
+  margin-right: 0;
+}
+
+.rating__star--active {
+  color: #ffc727;
 }
 
 .rating__grade {
@@ -719,6 +768,7 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .reviews__reviewer {
@@ -852,6 +902,9 @@ a {
   width: 26px;
   height: 26px;
   background-color: #54bd95;
+  background-image: url("./../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
   border-radius: 50%;
 }
 
@@ -936,6 +989,19 @@ a {
   width: 60px;
   height: 60px;
   background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+.support__item--publishing::before {
+  background-image: url("./../img/icons/publishing.svg");
+}
+
+.support__item--analytics::before {
+  background-image: url("./../img/icons/analytics.svg");
+}
+
+.support__item--engagement::before {
+  background-image: url("./../img/icons/engagement.svg");
 }
 
 .support__item-title {
@@ -954,6 +1020,7 @@ a {
 }
 
 .teams__title {
+  margin: 0;
   margin-bottom: 60px;
   font-size: 40px;
   line-height: 48px;
@@ -983,8 +1050,24 @@ a {
 }
 
 @supports (-webkit-appearance:none) {
+  .benefit__item::before {
+    background-image: url("./../img/icons/tick.svg");
+  }
+
+  .form-get-started__title::before {
+    background-image: url("./../img/icons/coins.svg");
+  }
+
+  .introduction__demo::before {
+    background-image: url("./../img/icons/view.svg");
+  }
+
   .main-container__inner-features-benefit-plans {
     background-image: url("./../img/main-background-2.webp");
+  }
+
+  .main-footer__form-submit {
+    background-image: url("./../img/icons/arrow-right.svg");
   }
 
   .page__body {
@@ -997,6 +1080,22 @@ a {
 
   .subscriptions__item--active {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='300' cx='187' cy='446' fill=' %236bc2a1'/%3E%3C/svg%3E");
+  }
+
+  .subscriptions__list-item::before {
+    background-image: url("./../img/icons/tick.svg");
+  }
+
+  .support__item--publishing::before {
+    background-image: url("./../img/icons/publishing.svg");
+  }
+
+  .support__item--analytics::before {
+    background-image: url("./../img/icons/analytics.svg");
+  }
+
+  .support__item--engagement::before {
+    background-image: url("./../img/icons/engagement.svg");
   }
 }
 
